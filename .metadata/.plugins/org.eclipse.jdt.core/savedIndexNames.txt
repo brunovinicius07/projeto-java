@@ -1,0 +1,4 @@
+INDEX VERSION 1.131+C:\temp\Exercicios Eclipse\ws-eclipse-149-enum\.metadata\.plugins\org.eclipse.jdt.core
+464149355.index
+3331841758.index
+1865797976.index

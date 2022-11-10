@@ -1,0 +1,33 @@
+package application;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+import entities.Departamento;
+import entities.Trabalhador;
+import entities.enums.Nivel;
+
+public class Program {
+
+	public static void main(String[] args) {
+		
+		Locale.setDefault(Locale.US);
+		Scanner leia = new Scanner(System.in);
+		
+		System.out.print("Informe o nome do departamento: ");
+		String nomeDepartamento = leia.nextLine();
+		System.out.print("Insira os dados do trabalhador:");
+		System.out.println("Nome: ");
+		String nomeTrab = leia.nextLine();
+		System.out.println("Nivel: ");
+		String nivelTrab = leia.nextLine();
+		System.out.println("Salário base: ");
+		double salarioBase = leia.nextDouble();
+		Trabalhador trabalhador = new Trabalhador(nomeTrab, Nivel.valueOf(nivelTrab),salarioBase, new Departamento(nomeDepartamento));
+		
+		
+		leia.close();
+
+	}
+
+}
